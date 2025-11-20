@@ -50,3 +50,12 @@ Para executar este projeto em sua máquina local, siga os passos abaixo:
 
 ## 📂 Estrutura de Arquivos
 
+```
+.
+├── index.html          # Arquivo principal da página
+├── style.css           # Folha de estilos personalizada
+├── js/
+│   └── script.js       # Lógica principal da aplicação (Isotope, busca, etc.)
+└── python/
+    └── recipe.json     # Fonte de dados com as informações das receitas
+```
