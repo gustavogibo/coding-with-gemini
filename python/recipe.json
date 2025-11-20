@@ -1,0 +1,416 @@
+[
+    {
+        "name": "Bolinha de queijo com 3 ingredientes",
+        "description": "Além de fácil, essa receita precisa apenas de 3 ingredientes: mussarela, amido de milho e ovo. Confira e se delicie!",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinha-de-queijo-com-3-ingredientes-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinha-de-queijo-com-3-ingredientes/"
+    },
+    {
+        "name": "Bolinha de queijo sem massa",
+        "description": "Existem inúmeras variações de bolinha de queijo, inclusive a receita de bolinha de queijo sem massa, que também é saborosa. Esta receita rende vinte bolinhas, mas se você preferir pode aumentar os ingredientes de acordo com o rendimento desejado.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/139007504_127724765781241_6666339022300279821_n-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinha-de-queijo-sem-massa/"
+    },
+    {
+        "name": "Rolinho de pastel com presunto e queijo",
+        "description": "Rolinhos são um ótimo aperitivo, mas você já imaginou prepará-los com massa de pastel? Com esta receita superfácil e pode ser assada no forno, você vai aprender. Utilize um rolo de massa de pastel, presunto e mussarela a gosto e só.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/rolinho-de-pastel-com-presunto-e-queijo-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/rolinho-de-pastel-com-presunto-e-queijo/"
+    },
+    {
+        "name": "Bolinha de queijo muito fácil",
+        "description": "Extremamente fácil, crocante e usando poucos ingredientes, essa receita é sucesso garantido como lanche ou para festas.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinha-de-queijo-muito-facil-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinha-de-queijo-muito-facil/"
+    },
+    {
+        "name": "Empada de queijo fácil",
+        "description": "Esta receita de empada aberta de queijo é uma delícia e rende cerca de dez empadinhas. Para a massa, você vai precisar de manteiga, farinha de trigo e ovo.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/empada-de-queijo-facil-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/empada-de-queijo-facil/"
+    },
+    {
+        "name": "Croquete de batata com queijo",
+        "description": "Estes croquetes são ideais para uma festa de aniversário. Além disso, eles são simples de serem feitos. Você utilizará três batatas cozidas e amassadas, dois ovos, queijo mussarela, farinha de rosca, farinha panko, cebolinha, sal, pimenta dedo de moça e vinagre. Para acompanhar, você pode fazer também um molho perfumado de ervas e mostarda.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/croquete-de-batata-com-queijo-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/croquete-de-batata-com-queijo/"
+    },
+    {
+        "name": "Palitos de queijo simples e crocantes",
+        "description": "Com um tempo de preparo de trinta minutos e rendendo até 45 unidades, estes palitos de parmesão levam ovo batido, sal, leite, polvilho doce, queijo parmesão e mussarela.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/palitos-de-queijo-simples-e-crocantes-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/palitos-de-queijo-simples-e-crocantes/"
+    },
+    {
+        "name": "Bolinho de arroz com queijo",
+        "description": "Dois copos de arroz cozido, um ovo, cheiro-verde, queijo parmesão, farinha de rosca e óleo são os ingredientes desta receita. O recheio fica por conta do queijo mussarela em cubos.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-arroz-com-queijo-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-arroz-com-queijo/"
+    },
+    {
+        "name": "Bolinha de queijo com bacon fácil",
+        "description": "Crocantes, saborosas e fáceis. Estas palavras resumem bem esta receita de bolinha de queijo com bacon. Para prepará-las, você vai precisar de queijo mussarela, ovo, amido de milho e bacon.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinha-de-queijo-com-bacon-facil-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinha-de-queijo-com-bacon-facil/"
+    },
+    {
+        "name": "Coxinha de frango",
+        "description": "Com massa de farinha de trigo incrementada com caldo de galinha, nada como uma coxinha de frango para servir aos convidados, não é mesmo? Fritas em óleo bem quente, ficarão crocantes e douradinhas.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-de-frango-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha-de-frango/"
+    },
+    {
+        "name": "Coxinha",
+        "description": "Experimente fazer essa clássica coxinha de frango para a sua festa. Você pode modelar em tamanho menores, como preferir. Aproveite e acesse a receita completa em fotos do passo a passo!",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-capa-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha/"
+    },
+    {
+        "name": "Nuggets saudável",
+        "description": "E que tal uma opção saudável de nuggets? Sim, aqui você vai aprender uma versão bem mais leve do que aquela industrializada, confira!",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/nuggets-saudavel-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/nuggets-saudavel/"
+    },
+    {
+        "name": "Bolinho de frango rápido",
+        "description": "Suculenta, macia e crocante. Esse bolinho de frango com requeijão é empanado com amido de milho, claras e farinha de rosca. Para o recheio, você vai utilizar peito de frango desfiado, cebola, alho, sal, pimenta-do-reino, colorau, orégano e salsinha.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-frango-rapido-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-frango-rapido/"
+    },
+    {
+        "name": "Croquetes de frango com brócolis",
+        "description": "Este croquete de frango rende várias porções e leva parmesão, azeite, sal, especiarias, ovos, frango e brócolis cozidos.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/243263848_259217732753318_7395508675078102932_n-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/croquetes-de-frango-com-brocolis/"
+    },
+    {
+        "name": "Coxinha de frango sem massa",
+        "description": "Para o recheio destas coxinhas, você vai precisar de frango, sal, colorau, cebolinha, coentro e requeijão. Utilize farinha de rosca e ovos para empanar.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-de-frango-sem-massa-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha-de-frango-sem-massa/"
+    },
+    {
+        "name": "Bolinha de frango com Catupiry fácil",
+        "description": "Para preparar esta receita superfácil, você vai precisar de um peito de frango cozido, um pote de catupiry gelado, três claras de ovo e farinha de rosca.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinha-de-frango-com-catupiry-facil-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinha-de-frango-com-catupiry-facil/"
+    },
+    {
+        "name": "Coxinhas de abóbora cabotiá",
+        "description": "A massa desta coxinha é simplesmente perfeita! Para o recheio, você utilizará temperinhos de sua preferência, queijo minas e frango desfiado.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinhas-de-abobora-cabotia-01-640x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinhas-de-abobora-cabotia/"
+    },
+    {
+        "name": "Coxinha simples",
+        "description": "Com 70 minutinhos de preparo, essa é uma coxinha com massa de batata muito simples de fazer! Com recheio de frango cremoso, o resultado é perfeito para qualquer festinha.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-simples-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha-simples/"
+    },
+    {
+        "name": "Croquete de frango simples",
+        "description": "Para preparar esse croquete de frango simples, você precisará de apenas 30 minutinhos, um frango desfiado bem temperadinho e os ingredientes para dar liga e empanar. Confira!",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/croquete-de-frango-simples-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/croquete-de-frango-simples/"
+    },
+    {
+        "name": "Coxinha de batata-doce fit",
+        "description": "Macia por dentro, leve e crocante por fora. Esta coxinha com massa de batata-doce é deliciosa, fácil de preparar e com um recheio de dar água na boca. Para empanar, você deve utilizar farinha de aveia.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-de-batata-doce-fit-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha-de-batata-doce-fit/"
+    },
+    {
+        "name": "Coxinha com massa de arroz",
+        "description": "Sabe aquela sobra de arroz dos últimos dias? Utilize ela para fazer esta coxinha deliciosa de frango. Além de um preparo rápido e simples, esta receita é super econômica.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-com-massa-de-arroz-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha-com-massa-de-arroz/"
+    },
+    {
+        "name": "Nuggets de frango com parmesão",
+        "description": "Nuggets por si só já são deliciosas, mas imagine recheadas de frango e queijo? Servindo até cinco porções, esta receita leva peite de frango, sal, pimenta-do-reino, alho, farinha de trigo, parmesão, ovos e farinha panko.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/nuggets-de-frango-com-parmesao-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/nuggets-de-frango-com-parmesao/"
+    },
+    {
+        "name": "Nuggets de frango recheado",
+        "description": "Se você é fã de nuggets, vai amar esta receita. Ela é saudável, simples e possui um tempero delicioso. Além disso, você pode empanar no ovo e na farinha panko e assar no forno ou fritar.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/nuggets-de-frango-recheado-730x477.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/nuggets-de-frango-recheado/"
+    },
+    {
+        "name": "Bolinho de frango e couve-flor",
+        "description": "Excelente para festas em casa ou ainda para acompanhar um risoto ou purê, este bolinho de frango com couve-flor é prático e fica pronto em um instante. Ele leva suco de limão no preparo.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-frango-e-couve-flor-01-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-frango-e-couve-flor/"
+    },
+    {
+        "name": "Croquete de frango com batata-doce assado",
+        "description": "O croquete de frango é um salgadinho super tradicional na culinária brasileira, mas o sabor da batata-doce deixa ele ainda melhor. Esta receita vai exigir um pouquinho mais de você, mas valerá a pena.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/croquete-de-frango-com-batata-doce-assado-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/croquete-de-frango-com-batata-doce-assado/"
+    },
+    {
+        "name": "Enroladinho de salsicha folhado",
+        "description": "Utilize massa folhada, salsicha e ovo. Este enroladinho é um petisco delicioso para o fim de semana e rende quantas porções você quiser.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/enroladinho-de-salsicha-folhado-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/enroladinho-de-salsicha-folhado/"
+    },
+    {
+        "name": "Enroladinho frito de salsicha",
+        "description": "Esta receita fica pronta em meia hora e leva apenas leite, caldo de carne, margarina, sal, ovo, farinha de trigo e salsicha. Super fácil e prática. Para fazer mais quantidades, é só dobrar a quantidade de cada ingrediente.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/enroladinho-frito-de-salsicha-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/enroladinho-frito-de-salsicha/"
+    },
+    {
+        "name": "Croquete de calabresa fácil",
+        "description": "Ao preparar este croquete fique atento ao passo a passo. Comece pelo recheio e siga para a massa. Frite em óleo por imersão e sirva com mostarda.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/croquete-de-calabresa-facil-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/croquete-de-calabresa-facil/"
+    },
+    {
+        "name": "Bolinho de carne moída com queijo",
+        "description": "Para preparar esta delícia, você vai precisar de carne moída, cebola, salsinha, cebolinha, creme de cebola, farinha de trigo, queijo, ovo e temperos. Uma dica importante é: acrescente a farinha aos poucos, até \"dar liga\" à massa.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-carne-moida-com-queijo-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-carne-moida-com-queijo/"
+    },
+    {
+        "name": "Kibe na airfryer",
+        "description": "Este kibe é superfácil de ser preparado e é perfeito para uma festa de aniversário infantil. O tempo de preparo é de uma hora e o rendimento é de quatorze mini kibes.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/kibe-na-airfryer-06-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/kibe-na-airfryer/"
+    },
+    {
+        "name": "Pastel de feira de carne moída",
+        "description": "Com esta receita de pastel de festa, a sua reunião com os amigos ficará ainda melhor. Rendendo até quinze pastéis, o tempo de preparo é de uma hora e meia.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/pastel-de-feira-de-carne-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/pastel-de-feira-de-carne-moida/"
+    },
+    {
+        "name": "Salsicha no palito",
+        "description": "Este hot dog no palito é uma opção fácil e barata para servir em uma festa de aniversário. A Massa é saborosa, macia e rende vinte hot dogs. Experimente!",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/salsicha-no-palito-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/salsicha-no-palito/"
+    },
+    {
+        "name": "Bolinho de mandioca com carne-seca",
+        "description": "O bolinho de carne seca lembra muito uma almôndega, mas mais saboroso e crocante. Você vai precisar de quinhentos gramas de charque, ovos, tomate, mandioca, farinha de rosca, cebola picada e temperos a gosto.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-mandioca-com-carne-seca-capa-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-mandioca-com-carne-seca/"
+    },
+    {
+        "name": "Bolinho de arroz com calabresa",
+        "description": "Este bolinho de arroz é extremamente delicioso e pode ser servido logo depois de frito ou ainda conservado por até três meses na geladeira.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-arroz-com-calabresa-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-arroz-com-calabresa/"
+    },
+    {
+        "name": "Tortinha de legumes",
+        "description": "Para fazer a massa destas tortinhas, você só precisa misturar todos os ingredientes, colocar em forminhas e levar ao fonro. Simples, rápido e fácil.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/tortinha-de-legumes-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/tortinha-de-legumes/"
+    },
+    {
+        "name": "Salgadinho assado de queijo",
+        "description": "Esta receita é super versátil e pode servir como acompanhamento ou prato principal. Ela rende quinze porções.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/salgadinho-assado-de-queijo-01-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/salgadinho-assado-de-queijo/"
+    },
+    {
+        "name": "Pãozinho recheado com carne moída",
+        "description": "Para fazer este pãozinho, você pode utilizar carne moída como recheio, mas existem outras opções ainda mais deliciosas - frango com catupiry, calabresa e queijo com goiabada.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/paozinho-recheado-com-carne-moida-1-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/paozinho-recheado-com-carne-moida/"
+    },
+    {
+        "name": "Empanada da Paola Carosella",
+        "description": "A massa leva farinha de trigo, farinha de quinoa, azeite, óleo, água, sal e vinagre. Pincele uma gema de ovo batida com leite e polvilhe açúcar antes de levar ao forno preaquecido.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/empanada-da-paola-carosella-2-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/empanada-da-paola-carosella/"
+    },
+    {
+        "name": "Enroladinho de salsicha assado",
+        "description": "Este salgadinho é bem tradicional nas festas americanas, mas se encaixa perfeitamente na nossa cultura. A receita rende vinte porções e é de nível fácil.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/enroladinho-de-salsicha-assado-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/enroladinho-de-salsicha-assado/"
+    },
+    {
+        "name": "Muffin de polvilho com presunto e queijo",
+        "description": "Estes muffins são deliciosos e podem ser servidos quentes ou frios, acompanhados por algum molho de sua preferência.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/muffin-de-polvilho-com-presunto-e-queijo-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/muffin-de-polvilho-com-presunto-e-queijo/"
+    },
+    {
+        "name": "Esfiha",
+        "description": "Aprenda a preparar uma esfiha clássica e deliciosa. Além da massa, você vai aprender aquele recheio de carne perfeito.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/esfiha-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/esfiha/"
+    },
+    {
+        "name": "Muffin de brócolis e bacon",
+        "description": "Além de possuírem uma boa aparência, estes muffins de brócolis levam farinha de aveia, parmesão, frango desfiado, brócolis, bacon frito, temperos, ovo, cebola e fermento.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/muffin-de-brocolis-e-bacon-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/muffin-de-brocolis-e-bacon/"
+    },
+    {
+        "name": "Muffin salgado",
+        "description": "Você já imaginou um cupcake salgado? Com esta receita deliciosa que leva recheio de sua preferência (atum, frango, tomate seco, rúcula e outros) e cobertura de farinha de trigo, você vai se apaixonar por este prato. Rendimento: quinze bolinhos.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/muffin-salgado-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/muffin-salgado/"
+    },
+    {
+        "name": "Esfiha de carne fechada",
+        "description": "Com um tempo de preparo de duas horas e meia e rendendo 25 esfihas, esta receita é superbarata e fácil de se fazer. Uma dica importante é pré-aquecer o forno antes de começar o prato.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/esfiha-de-carne-fechada-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/esfiha-de-carne-fechada/"
+    },
+    {
+        "name": "Bolinho de atum assado fácil",
+        "description": "Parece brincadeira, mas para esta receita você vai utilizar apenas três ingredientes e alguns temperos. Separe a latinha de atum sem a água e escolha as ervas de sua preferência.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-atum-assado-facil-730x477.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-atum-assado-facil/"
+    },
+    {
+        "name": "Empadinha de calabresa com requeijão",
+        "description": "Esta receita rende até catorze empadinhas, o que é perfeito para um café. O tempo de preparo é de quarenta minutos.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/empadinha-de-calabresa-com-requeijao-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/empadinha-de-calabresa-com-requeijao/"
+    },
+    {
+        "name": "Cestinhas de massa de pastel recheadas",
+        "description": "Fácil, deliciosa e rápida de se fazer. A cestinha com presunto é o prato perfeito para acompanhar um churrasco, por exemplo.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/cestinhas-de-massa-de-pastel-recheadas-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/cestinhas-de-massa-de-pastel-recheadas/"
+    },
+    {
+        "name": "Tortinha de palmito",
+        "description": "Estas tortinhas mais refinadas são perfeitas para um jantar a dois ou uma confraternização entre amigos. Rendimento: quinze unidades.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/tortinha-de-palmito-01-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/tortinha-de-palmito/"
+    },
+    {
+        "name": "Bolinho de arroz com batata",
+        "description": "Separe arroz cozido, cebola cortada, dente de alho, batata amassada, queijo ralado e amido de milho. Esta receita rende doze porções e fica prontinha em menos de meia hora.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinho-de-arroz-com-batata-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinho-de-arroz-com-batata/"
+    },
+    {
+        "name": "Pastel de forno sertanejo com carne de sol",
+        "description": "Rendendo quinze unidades, este pastel de forno é uma ótima ideia para servir como lanche da tarde ou em uma festinha como aperitivo. O custo é baixo e os ingredientes são supersimples.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/pastel-de-forno-sertanejo-com-carne-de-sol-1-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/pastel-de-forno-sertanejo-com-carne-de-sol/"
+    },
+    {
+        "name": "Tortinha de strogonoff",
+        "description": "Farinha de amêndoas, farinha de coco, parmesão, temperos são os ingredientes principais desta tortinha. Para o recheio: strogonoff feito à sua maneira.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/tortinha-de-strogonoff-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/tortinha-de-strogonoff/"
+    },
+    {
+        "name": "Esfiha integral com recheio de ricota",
+        "description": "Para fazer trinta esfihas pequenas, você vai precisar de ricota amassada, creme de leite, tomate, farinhas de trigo branca e integral, leite, fermento e outros ingredientes.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/esfiha-integral-com-recheio-de-ricota-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/esfiha-integral-com-recheio-de-ricota/"
+    },
+    {
+        "name": "Tortinha de bacalhau",
+        "description": "O bacalhau fica bem em qualquer refeição e nesta, em especial, ainda mais. O rendimento é de oito pedaços pequenos.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/tortinha-de-bacalhau-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/tortinha-de-bacalhau/"
+    },
+    {
+        "name": "Enroladinho de queijo",
+        "description": "Enroladinho é sempre uma delícia, mas a combinação da massa com a do queijo é ainda melhor.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/enroladinho-de-queijo-capa-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/enroladinho-de-queijo/"
+    },
+    {
+        "name": "Esfiha Turca",
+        "description": "Com esta receita deliciosa, você vai conquistar muitos convidados. Para prepará-la, utilize fermento biológico, açúcar, farinha de trigo, ovo, sal e azeite. No recheio, use patinho moído, cebola, tomate, hortelã, suco de limão, sal e pimenta.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/esfiha-turca-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/esfiha-turca/"
+    },
+    {
+        "name": "Risoles de carne moída fácil",
+        "description": "Este risoles é supercrocante e leva apenas sal, caldo de galinha, água, gordura vegetal e farinha de trigo. Prático, né?",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/risoles-de-carne-moida-facil-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/risoles-de-carne-moida-facil/"
+    },
+    {
+        "name": "Croquete de aveia com queijo",
+        "description": "O croquete de aveia com queijo é um prato prático, saboroso e saudável. Prepare para os seus convidados que preferem uma alimentação mais balanceada ou com alguma restrição alimentar.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/croquete-de-aveia-com-queijo-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/croquete-de-aveia-com-queijo/"
+    },
+    {
+        "name": "Dadinho de tapioca",
+        "description": "Servindo até quatro pessoas e com um tempo de preparo um pouco demorado, estes dadinhos de tapioca são um ótimo acompanhamento. Fique atento ao modo de preparo e à quantidade de ingredientes.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/dadinhos-de-tapioca-capa-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/dadinho-de-tapioca/"
+    },
+    {
+        "name": "Falafel libanês",
+        "description": "Esses salgadinhos são saborosos e fáceis de serem preparados. Você só vai precisar de grão-de-bico, coentro, salsa, cebola, alho, cominho, pimenta-do-reino, sal e bicarbonato.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/falafel-libanes-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/falafel-libanes/"
+    },
+    {
+        "name": "Pastel de forno integral simples",
+        "description": "Este pastel de forno integral é uma delícia e pode levar o recheio que você quiser. Aqui vão algumas opções: carne moída, calabresa com queijo, palmito com frango e queijo com presunto.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/pastel-de-forno-integral-simples-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/pastel-de-forno-integral-simples/"
+    },
+    {
+        "name": "Bolinha de milho com queijo fit",
+        "description": "Esta receita é prática e o resultado, delicioso. Você vai precisar de milho verde, azeite, creme de leite, farinha de aveia, sal, temperos, queijo, ovo e farinha de rosca.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/bolinha-de-milho-com-queijo-fit-01-730x480.png",
+        "recipe_url": "https://www.receiteria.com.br/receita/bolinha-de-milho-com-queijo-fit/"
+    },
+    {
+        "name": "Empadinha de frango sem glúten",
+        "description": "Todo mundo ama empadinha e esta receita é mais uma opção para você que prefere comidas mais saudáveis e sem glúten. O rendimento é de vinte empadinhas.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/empadinha-de-frango-sem-gluten-01-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/empadinha-de-frango-sem-gluten/"
+    },
+    {
+        "name": "Coxinha de batata-doce",
+        "description": "Um preparo delicioso, saudável e fácil de fazer. Confira essa receita de coxinha de batata-doce. O recheio é o clássico frango desfiado, mas você pode variar de acordo com suas preferências.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-de-batata-doce-730x480.jpeg",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha-de-batata-doce/"
+    },
+    {
+        "name": "Croquete de berinjela",
+        "description": "Separe duas berinjelas, dentes de alho, duas batatas, tomate, pimenta dedo-de-moça, tahine, noz-moscada, ovo e farinha de trigo. Para preparar esta receita, você deve cortar cubos de berinjela e deixá-las de molho em um recipiente antes do preparo.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/croquete-de-berinjela-01-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/croquete-de-berinjela/"
+    },
+    {
+        "name": "Muffin salgado sem glúten",
+        "description": "Trinta e cinco minutos é o tempo que você vai levar para preparar este salgado empanado sem glúten e lactose. A receita é super saudável e o rendimento pode variar de acordo com a quantidade de ingredientes que você utilizar.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/muffin-salgado-sem-gluten-1-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/muffin-salgado-sem-gluten/"
+    },
+    {
+        "name": "Nuggets vegano de legumes",
+        "description": "É uma combinação de batata, milho, ervilhas e temperos que fica uma delícia. Você vai precisar de farinha de milho e óleo vegetal para empanar.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/nuggets-vegano-de-legumes-01-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/nuggets-vegano-de-legumes/"
+    },
+    {
+        "name": "Coxinha fit sem massa",
+        "description": "Se você se preocupa com as calorias de um salgadinho, aqui vai: uma coxinha sem massa. Além disso, são sem glúten e levam aveia crua e um ovo para empanar.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/coxinha-fit-sem-massa-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/coxinha-fit-sem-massa/"
+    },
+    {
+        "name": "Esfiha saudável",
+        "description": "Esta receita rende até 12 unidades, é livre de leite, ovos e glúten e deve ser preparada com cuidado. Sirva como prato principal ou acompanhamento.",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/esfiha-saudavel-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/esfiha-saudavel/"
+    },
+    {
+        "name": "Salgadinho fit de batata-doce com frango e queijo",
+        "description": "Batata-doce, frango desfiado, sal, pimenta-do-reino, cebolinha, azeite, queijo parmesão, queijo mussarela e azeite é tudo o que você precisa para preparar essa receita deliciosa!",
+        "image_url": "https://www.receiteria.com.br/wp-content/uploads/salgadinho-fit-de-batata-doce-com-frango-e-queijo-730x480.jpg",
+        "recipe_url": "https://www.receiteria.com.br/receita/salgadinho-fit-de-batata-doce-com-frango-e-queijo/"
+    }
+]

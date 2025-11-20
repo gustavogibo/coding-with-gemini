@@ -1,0 +1,106 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+/* Logo Styling */
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-brand b {
+    color: #198754; /* Bootstrap's success color */
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(25, 135, 84, 0.7);
+}
+
+.navbar-nav .nav-link,
+footer .footer-links a {
+    position: relative;
+    transition: color 0.3s ease;
+    display: inline-block; /* Ensures the ::after pseudo-element is positioned correctly */
+    padding-bottom: 2px; /* Add some padding to prevent clipping */
+}
+
+/* Common styles for the underline animation */
+.navbar-nav .nav-link::after,
+footer .footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    left: 0;
+    background-color: #198754; /* Bootstrap's success color */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+/* Specific position for header link underline */
+.navbar-nav .nav-link::after {
+    bottom: 0;
+}
+
+/* Specific position for footer link underline */
+footer .footer-links a::after {
+    bottom: -4px;
+}
+
+.navbar-nav .nav-link:hover::after,
+footer .footer-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Search bar focus effect */
+.d-flex .form-control[type="search"] {
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.d-flex .form-control[type="search"]:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #198754;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Ensure card body stretches to fill height */
+.card-body {
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Make the card text grow to fill available space */
+.card-body .card-text {
+    /* Set a minimum height to accommodate ~3 lines of text */
+    min-height: 4.5rem; /* 1.5rem (line-height) * 3 */
+    overflow: hidden;
+}
