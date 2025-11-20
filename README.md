@@ -4,8 +4,7 @@
 
 Bem-vindo ao site "Melhores Receitas Salgadas do Brasil"! Este é um projeto de front-end que apresenta uma coleção de deliciosas receitas da culinária brasileira em uma interface web moderna, responsiva e interativa.
 
-**[➡️ Acesse a demonstração ao vivo aqui!](https://<your-username>.github.io/<your-repository-name>/)**
-*(Substitua `<your-username>` e `<your-repository-name>` pelos seus dados do GitHub)*
+**[➡️ Acesse a demonstração ao vivo aqui!](https://gustavogibo.github.io/coding-with-gemini/)
 
 ## 📋 Descrição
 
@@ -36,12 +35,12 @@ Para executar este projeto em sua máquina local, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/<your-username>/<your-repository-name>.git
+    git clone https://github.com/gustavogibo/coding-with-gemini.git
     ```
 
 2.  **Navegue até o diretório do projeto:**
     ```bash
-    cd <your-repository-name>
+    cd coding-with-gemini
     ```
 
 3.  **Abra o arquivo `index.html`:**
