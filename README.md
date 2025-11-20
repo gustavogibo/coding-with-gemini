@@ -1,6 +1,6 @@
 # Melhores Receitas Salgadas do Brasil
 
-![Recipe Website Screenshot](https://raw.githubusercontent.com/aluralatamcursos/2034-logica-programacion-2/main/img/challenge.png)
+![Recipe Website Screenshot](https://github.com/gustavogibo/coding-with-gemini/blob/main/img/website-screenshot.png?raw=true)
 
 Bem-vindo ao site "Melhores Receitas Salgadas do Brasil"! Este é um projeto de front-end que apresenta uma coleção de deliciosas receitas da culinária brasileira em uma interface web moderna, responsiva e interativa.
 
