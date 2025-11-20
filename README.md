@@ -1,3 +1,48 @@
+
+(PORTUGUESE VERSION BELOW)
+
+
+# Best Savory Recipes from Brazil
+
+![Recipe Website Screenshot](https://github.com/gustavogibo/coding-with-gemini/blob/main/img/website-screenshot.png?raw=true)
+
+Welcome to the "Best Savory Recipes from Brazil" website! This is a front-end project that presents a collection of delicious Brazilian culinary recipes in a modern, responsive, and interactive web interface.
+
+**[➡️ Access the live demo here!](https://gustavogibo.github.io/coding-with-gemini/)
+
+---
+
+## 📋 Description
+
+This project is a Single Page Application (SPA) web page that dynamically displays recipe cards. Users can browse recipes, search for specific dishes, and load more options as they scroll the page. The layout is fully **responsive** and adapts to different screen sizes, from desktops to mobile devices.
+
+---
+
+## ✨ Features
+
+* **Responsive Design:** Interface built with **Bootstrap 5** to ensure a great experience on any device.
+* **Dynamic Grid:** Masonry layout using **Isotope.js** that rearranges with animation.
+* **Real-Time Search:** Instantly filter recipes by typing in the search field.
+* **Load More:** Progressively load more recipes with the "Load More Recipes" button.
+* **"Back to Top" Button:** Easy navigation to return to the top of the page.
+* **"No Results" Message:** Friendly visual feedback when a search returns no results.
+
+---
+
+## 🛠️ Technologies Used
+
+* **HTML5:** For the semantic content structure.
+* **CSS3:** For custom styling and design.
+* **JavaScript (ES6+):** For all interactive logic, DOM manipulation, and functionalities.
+* **Bootstrap 5:** CSS framework for responsive layout and UI components.
+* **Isotope.js:** JavaScript library for filtering and sorting grid layouts.
+* **imagesLoaded.js:** To ensure the Isotope layout is applied only after all images are loaded.
+* **Font Awesome:** For vector icons.
+
+
+------------------------------------------------------------------------------------------------------
+
+
 # Melhores Receitas Salgadas do Brasil
 
 ![Recipe Website Screenshot](https://github.com/gustavogibo/coding-with-gemini/blob/main/img/website-screenshot.png?raw=true)
