@@ -12,9 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const loadMoreBtn = document.getElementById('loadMoreBtn');
     const itemsPerLoad = 12;
     let visibleItemCount = itemsPerLoad;
-    const allCards = Array.from(cardContainer.children);
+    let allCards = []; // This will be populated dynamically
 
     let iso; // Isotope instance
+    let allRecipes = []; // To store all recipes from JSON
 
     function initializeIsotope() {
         // Initialize Isotope. It will automatically perform the first layout.
@@ -75,40 +76,86 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500); // Corresponds to the transition duration
     }
 
-    // Use imagesLoaded to trigger the first layout calculation
-    imagesLoaded(cardContainer).on('done', function() {
-        console.log('All images loaded. Trimming text and initializing Isotope.');
-
-        // --- Dynamic Text Trimming ---
-        // This should run AFTER images are loaded but BEFORE Isotope initializes.
-        // Trim descriptions
+    /**
+     * Creates a recipe card element from a recipe object.
+     * @param {object} recipe - The recipe data.
+     * @returns {HTMLElement} The card element.
+     */
+    function createRecipeCard(recipe) {
+        const titleLimit = 35;
         const descriptionLimit = 95;
-        const descriptionElements = document.querySelectorAll('.card-text');
-        descriptionElements.forEach(cardText => {
-            const originalText = cardText.textContent;
-            if (originalText.length > descriptionLimit) {
-                cardText.textContent = originalText.substring(0, descriptionLimit).trim() + '...';
-            }
-        });
 
-        // Trim titles
-        const titleLimit = 25;
-        const titleElements = document.querySelectorAll('.card-title');
-        titleElements.forEach(cardTitle => {
-            const originalTitle = cardTitle.textContent;
-            if (originalTitle.length > titleLimit) {
-                cardTitle.textContent = originalTitle.substring(0, titleLimit).trim() + '...';
+        /**
+         * Trims text to a specified limit and adds an ellipsis.
+         * @param {string} text - The text to trim.
+         * @param {number} limit - The character limit.
+         * @returns {string} The trimmed text.
+         */
+        function trimText(text, limit) {
+            if (text.length > limit) {
+                return text.substring(0, limit).trim() + '...';
             }
-        });
+            return text;
+        }
 
-        initializeIsotope();
-    });
+        const col = document.createElement('div');
+        col.className = 'col';
+        col.innerHTML = `
+            <div class="card h-100">
+                <img src="${recipe.image_url}" class="card-img-top" alt="${recipe.name}" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <a href="${recipe.recipe_url}" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
+                    <h5 class="card-title">${trimText(recipe.name, titleLimit)}</h5>
+                    <p class="card-text">${trimText(recipe.description, descriptionLimit)}</p>
+                </div>
+            </div>
+        `;
+        return col;
+    }
+
+    /**
+     * Fetches recipes, populates the DOM, and initializes the page functionalities.
+     */
+    async function loadAndInitialize() {
+        try {
+            const response = await fetch('python/recipe.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            allRecipes = await response.json();
+            console.log("Recipes loaded from JSON:", allRecipes.length);
+
+            // Create and append all card elements to the container
+            allRecipes.forEach(recipe => {
+                const cardElement = createRecipeCard(recipe);
+                cardContainer.appendChild(cardElement);
+            });
+
+            // Now that cards are in the DOM, store them in the allCards array
+            allCards = Array.from(cardContainer.children);
+
+            // Use imagesLoaded to ensure all images are loaded before initializing Isotope
+            imagesLoaded(cardContainer).on('done', function() {
+                console.log('All images loaded. Initializing Isotope.');
+                initializeIsotope();
+                // Initial filter call to hide items beyond the initial limit
+                filterCards();
+            });
+
+        } catch (error) {
+            console.error("Could not load recipes:", error);
+            noResultsMessage.innerHTML = '<h4>Falha ao carregar receitas.</h4><p>Não foi possível buscar os dados. Por favor, tente recarregar a página.</p>';
+            noResultsMessage.style.display = 'block';
+        }
+    }
 
     function resetSearch() {
         searchInput.value = '';
         visibleItemCount = itemsPerLoad; // Reset visible count
         filterCards();
     }
+
+    // --- Event Listeners ---
 
     searchForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent page reload on form submission
@@ -166,4 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // --- Initial Load ---
+    loadAndInitialize();
 });
