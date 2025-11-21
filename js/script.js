@@ -163,6 +163,13 @@ document.addEventListener('DOMContentLoaded', function() {
         filterCards();
     });
 
+    // Add live search with debouncing as the user types
+    searchInput.addEventListener('input', debounce(function() {
+        visibleItemCount = itemsPerLoad; // Reset to first page when typing
+        filterCards();
+        console.log("Live search triggered for:", searchInput.value);
+    }, 300)); // 300ms delay
+
     resetBtn.addEventListener('click', function() {
         resetSearch();
     });
