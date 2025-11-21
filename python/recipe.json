@@ -2,31 +2,91 @@
     {
         "name": "Pão de Queijo Caseiro",
         "description": "Aprenda a fazer o clássico pão de queijo mineiro. Fofinho por dentro, crocante por fora. Perfeito para o café da tarde!",
-        "image_url": "https://images.unsplash.com/photo-1594041682318-456c31906b0c?q=80&w=1200",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/1.png?raw=true",
         "recipe_url": "https://unsplash.com/photos/a-close-up-of-a-bunch-of-food-on-a-plate-7_QeG_C4k6c"
     },
     {
         "name": "Coxinha de Frango Cremosa",
         "description": "Uma receita infalível de coxinha de frango com recheio cremoso e massa que desmancha na boca. O salgado preferido do Brasil!",
-        "image_url": "https://images.pexels.com/photos/13811365/pexels-photo-13811365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/2.png?raw=true",
         "recipe_url": "https://www.pexels.com/photo/close-up-shot-of-coxinhas-in-a-plate-13811365/"
     },
     {
         "name": "Pastel de Carne Seca com Queijo",
         "description": "Massa crocante e sequinha com um recheio generoso de carne seca desfiada com queijo coalho. O verdadeiro sabor da feira!",
-        "image_url": "https://images.pexels.com/photos/10790604/pexels-photo-10790604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/3.png?raw=true",
         "recipe_url": "https://www.pexels.com/photo/pastel-a-brazilian-snack-10790604/"
     },
     {
         "name": "Kibe Frito Tradicional",
         "description": "O clássico kibe árabe na versão brasileira. Crocante por fora, macio e bem temperado por dentro. Sirva com limão e impressione!",
-        "image_url": "https://images.pexels.com/photos/12490561/pexels-photo-12490561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/4.png?raw=true",
         "recipe_url": "https://www.pexels.com/photo/fried-kibbeh-with-lemon-12490561/"
     },
     {
         "name": "Empada de Palmito Cremosa",
-        "description": "Uma empadinha que derrete na boca, com massa amanteigada e um recheio super cremoso de palmito. Impossível comer uma só!",
-        "image_url": "https://images.pexels.com/photos/1400172/pexels-photo-1400172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "description": "Com massa amanteigada e um recheio super cremoso de palmito. Impossível comer uma só!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/1.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/baked-pastry-on-white-ceramic-plate-1400172/"
+    },
+    {
+        "name": "Pão de Queijo Caseiro",
+        "description": "Aprenda a fazer o clássico pão de queijo mineiro. Fofinho por dentro, crocante por fora. Perfeito para o café da tarde!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/1.png?raw=true",
+        "recipe_url": "https://unsplash.com/photos/a-close-up-of-a-bunch-of-food-on-a-plate-7_QeG_C4k6c"
+    },
+    {
+        "name": "Coxinha de Frango Cremosa",
+        "description": "Uma receita infalível de coxinha de frango com recheio cremoso e massa que desmancha na boca. O salgado preferido do Brasil!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/2.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/close-up-shot-of-coxinhas-in-a-plate-13811365/"
+    },
+    {
+        "name": "Pastel de Carne Seca com Queijo",
+        "description": "Massa crocante e sequinha com um recheio generoso de carne seca desfiada com queijo coalho. O verdadeiro sabor da feira!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/3.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/pastel-a-brazilian-snack-10790604/"
+    },
+    {
+        "name": "Kibe Frito Tradicional",
+        "description": "O clássico kibe árabe na versão brasileira. Crocante por fora, macio e bem temperado por dentro. Sirva com limão e impressione!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/4.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/fried-kibbeh-with-lemon-12490561/"
+    },
+    {
+        "name": "Empada de Palmito Cremosa",
+        "description": "Com massa amanteigada e um recheio super cremoso de palmito. Impossível comer uma só!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/1.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/baked-pastry-on-white-ceramic-plate-1400172/"
+    },
+    {
+        "name": "Pão de Queijo Caseiro",
+        "description": "Aprenda a fazer o clássico pão de queijo mineiro. Fofinho por dentro, crocante por fora. Perfeito para o café da tarde!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/1.png?raw=true",
+        "recipe_url": "https://unsplash.com/photos/a-close-up-of-a-bunch-of-food-on-a-plate-7_QeG_C4k6c"
+    },
+    {
+        "name": "Coxinha de Frango Cremosa",
+        "description": "Uma receita infalível de coxinha de frango com recheio cremoso e massa que desmancha na boca. O salgado preferido do Brasil!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/2.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/close-up-shot-of-coxinhas-in-a-plate-13811365/"
+    },
+    {
+        "name": "Pastel de Carne Seca com Queijo",
+        "description": "Massa crocante e sequinha com um recheio generoso de carne seca desfiada com queijo coalho. O verdadeiro sabor da feira!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/3.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/pastel-a-brazilian-snack-10790604/"
+    },
+    {
+        "name": "Kibe Frito Tradicional",
+        "description": "O clássico kibe árabe na versão brasileira. Crocante por fora, macio e bem temperado por dentro. Sirva com limão e impressione!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/4.png?raw=true",
+        "recipe_url": "https://www.pexels.com/photo/fried-kibbeh-with-lemon-12490561/"
+    },
+    {
+        "name": "Empada de Palmito Cremosa",
+        "description": "Com massa amanteigada e um recheio super cremoso de palmito. Impossível comer uma só!",
+        "image_url": "https://github.com/gustavogibo/coding-with-gemini/blob/main/img/1.png?raw=true",
         "recipe_url": "https://www.pexels.com/photo/baked-pastry-on-white-ceramic-plate-1400172/"
     }
 ]
