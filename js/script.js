@@ -1,205 +1,118 @@
-// Custom JavaScript file
-console.log("Custom script.js v3 loaded successfully.");
-
-document.addEventListener('DOMContentLoaded', function() {
-    const cardContainer = document.querySelector('.row.g-4');
-
-    // --- State Management ---
+document.addEventListener('DOMContentLoaded', function () {
     const searchForm = document.querySelector('form[role="search"]');
-    const searchInput = searchForm.querySelector('input[type="search"]');
-    const resetBtn = document.getElementById('resetBtn');
+    const searchInput = document.querySelector('input[type="search"]');
+    const resultsContainer = document.querySelector('.row.g-4');
     const noResultsMessage = document.getElementById('noResultsMessage');
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    const itemsPerLoad = 12;
-    let visibleItemCount = itemsPerLoad;
-    let allCards = []; // This will be populated dynamically
-
-    let iso; // Isotope instance
-    let allRecipes = []; // To store all recipes from JSON
-
-    function initializeIsotope() {
-        // Initialize Isotope. It will automatically perform the first layout.
-        iso = new Isotope(cardContainer, {
-            itemSelector: '.col',
-            layoutMode: 'masonry',
-            transitionDuration: '0.5s',
-            stagger: 30,
-            hiddenStyle: {
-                opacity: 0,
-                transform: 'translateY(50px)'
-            },
-            visibleStyle: {
-                opacity: 1,
-                transform: 'translateY(0)'
-            },
-            filter: function(item) {
-                const index = allCards.indexOf(item);
-                const searchTerm = searchInput.value.toLowerCase().trim();
-                const title = item.querySelector('.card-title').textContent.toLowerCase();
-                const text = item.querySelector('.card-text').textContent.toLowerCase();
-                const searchMatch = searchTerm === '' || title.includes(searchTerm) || text.includes(searchTerm);
-                const withinLimit = index < visibleItemCount;
-                return searchMatch && withinLimit;
-            }
-        });
-        console.log("Isotope initialized and layout complete.");
-    }
-
-    function filterCards() {
-        if (!iso) return; // Don't do anything if Isotope isn't ready
-        iso.arrange(); // Just tell Isotope to re-apply its filter
-
-        // Use a timeout to update buttons after the animation has started
-        setTimeout(function() {
-            // Show or hide the "no results" message
-            if (iso.filteredItems.length === 0 && searchInput.value.trim() !== '') {
-                noResultsMessage.style.display = 'block';
-            } else {
-                noResultsMessage.style.display = 'none';
-            }
-
-            // Manually find all cards that match the search term, ignoring the "load more" limit.
-            const searchTerm = searchInput.value.toLowerCase().trim();
-            const totalMatchingCards = allCards.filter(item => {
-                if (searchTerm === '') return true; // All cards match an empty search
-                const title = item.querySelector('.card-title').textContent.toLowerCase();
-                const text = item.querySelector('.card-text').textContent.toLowerCase();
-                return title.includes(searchTerm) || text.includes(searchTerm);
-            });
-
-            // Show or hide the "Load More" button
-            if (visibleItemCount >= totalMatchingCards.length) {
-                loadMoreBtn.style.display = 'none';
-            } else {
-                loadMoreBtn.style.display = 'block';
-            }
-        }, 500); // Corresponds to the transition duration
-    }
-
-    /**
-     * Creates a recipe card element from a recipe object.
-     * @param {object} recipe - The recipe data.
-     * @returns {HTMLElement} The card element.
-     */
-    function createRecipeCard(recipe) {
-        const titleLimit = 35;
-        const descriptionLimit = 95;
-
-        /**
-         * Trims text to a specified limit and adds an ellipsis.
-         * @param {string} text - The text to trim.
-         * @param {number} limit - The character limit.
-         * @returns {string} The trimmed text.
-         */
-        function trimText(text, limit) {
-            if (text.length > limit) {
-                return text.substring(0, limit).trim() + '...';
-            }
-            return text;
-        }
-
-        const col = document.createElement('div');
-        col.className = 'col';
-        col.innerHTML = `
-            <div class="card h-100">
-                <img src="${recipe.image_url}" class="card-img-top" alt="${recipe.name}" style="height: 200px; object-fit: cover;">
-                <div class="card-body">
-                    <a href="${recipe.recipe_url}" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
-                    <h5 class="card-title">${trimText(recipe.name, titleLimit)}</h5>
-                    <p class="card-text">${trimText(recipe.description, descriptionLimit)}</p>
-                </div>
-            </div>
-        `;
-        return col;
-    }
-
-    /**
-     * Fetches recipes, populates the DOM, and initializes the page functionalities.
-     */
-    async function loadAndInitialize() {
-        try {
-            const response = await fetch('python/recipe.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            allRecipes = await response.json();
-            console.log("Recipes loaded from JSON:", allRecipes.length);
-
-            // Create and append all card elements to the container
-            allRecipes.forEach(recipe => {
-                const cardElement = createRecipeCard(recipe);
-                cardContainer.appendChild(cardElement);
-            });
-
-            // Now that cards are in the DOM, store them in the allCards array
-            allCards = Array.from(cardContainer.children);
-
-            // Use imagesLoaded to ensure all images are loaded before initializing Isotope
-            imagesLoaded(cardContainer).on('done', function() {
-                console.log('All images loaded. Initializing Isotope.');
-                initializeIsotope();
-                // Initial filter call to hide items beyond the initial limit
-                filterCards();
-            });
-
-        } catch (error) {
-            console.error("Could not load recipes:", error);
-            noResultsMessage.innerHTML = '<h4>Falha ao carregar receitas.</h4><p>Não foi possível buscar os dados. Por favor, tente recarregar a página.</p>';
-            noResultsMessage.style.display = 'block';
-        }
-    }
-
-    function resetSearch() {
-        searchInput.value = '';
-        visibleItemCount = itemsPerLoad; // Reset visible count
-        filterCards();
-    }
+    const loadingSpinner = document.getElementById('loadingSpinner'); // Pega o spinner
+    const resetBtn = document.getElementById('resetBtn');
+    const navTriggers = document.querySelectorAll('.nav-trigger');
+    const pageSections = document.querySelectorAll('.page-section');
 
     // --- Event Listeners ---
+    searchForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const query = searchInput.value.trim();
 
-    searchForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent page reload on form submission
-        visibleItemCount = itemsPerLoad; // Reset to first page on new search
-        filterCards();
+        if (query) {
+            fetchRecipes(query);
+        }
     });
-
-    // Add live search with debouncing as the user types
-    searchInput.addEventListener('input', debounce(function() {
-        visibleItemCount = itemsPerLoad; // Reset to first page when typing
-        filterCards();
-        console.log("Live search triggered for:", searchInput.value);
-    }, 300)); // 300ms delay
 
     resetBtn.addEventListener('click', function() {
-        resetSearch();
+        searchInput.value = ''; // Clear the search input
+        fetchRecipes(''); // Fetch the initial random recipes
     });
 
-    loadMoreBtn.addEventListener('click', function() {
-        visibleItemCount += itemsPerLoad;
-        filterCards();
+    navTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('data-target');
+            showSection(targetId);
+
+            // Update active class in header
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === targetId) {
+                    link.classList.add('active');
+                }
+            });
+        });
     });
 
-    // Debounce function to limit how often a function can run.
-    function debounce(func, wait, immediate) {
-        var timeout;
-        return function() {
-            var context = this, args = arguments;
-            var later = function() {
-                timeout = null;
-                if (!immediate) func.apply(context, args);
-            };
-            var callNow = immediate && !timeout;
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-            if (callNow) func.apply(context, args);
-        };
-    };
+    function showSection(sectionId) {
+        pageSections.forEach(section => {
+            section.style.display = section.id === sectionId ? 'block' : 'none';
+        });
+        window.scrollTo(0, 0); // Scroll to the top of the page on section change
+    }
 
-    window.addEventListener('resize', debounce(() => {
-        if (iso) {
-            iso.layout();
+
+    async function fetchRecipes(query) {
+        // 1. Prepara a UI para a busca
+        loadingSpinner.style.display = 'block'; // Show the spinner
+        resultsContainer.innerHTML = ''; // Limpa resultados antigos
+        noResultsMessage.style.display = 'none'; // Esconde mensagem de erro
+
+        try {
+            // 2. Chama o back-end
+            const response = await fetch(`http://127.0.0.1:5000/api/search?query=${query}`);
+            
+            if (!response.ok) {
+                // Tenta ler a mensagem de erro do corpo da resposta do nosso back-end
+                const errorData = await response.json().catch(() => null); // Avoid breaking if error response is not JSON
+                throw new Error(errorData?.error || `Server error (status: ${response.status})`);
+            }
+
+            const recipes = await response.json();
+            
+            // 3. Exibe os resultados
+            displayRecipes(recipes);
+
+        } catch (error) {
+            console.error('Error fetching recipes:', error.message);
+            // Exibe a mensagem de erro específica que veio do back-end ou um erro genérico.
+            noResultsMessage.innerHTML = `<p class="text-center text-danger">An error occurred while fetching: ${error.message}</p>
+                                          <p class="text-center text-muted small">Please check your API key or daily usage limit.</p>`;
+            noResultsMessage.style.display = 'block';
+        } finally {
+            // 4. Garante que o spinner seja escondido ao final
+            loadingSpinner.style.display = 'none';
         }
-    }, 150));
+    }
+
+    function displayRecipes(recipes) {
+        resultsContainer.innerHTML = ''; // Limpa novamente por segurança
+
+        if (recipes.length === 0) {
+            noResultsMessage.style.display = 'block';
+            return;
+        }
+
+        recipes.forEach(recipe => {
+            // A API Spoonacular retorna 'image', 'title', 'readyInMinutes' e 'sourceUrl'
+            const cardHtml = `
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="${recipe.sourceUrl}" target="_blank" rel="noopener noreferrer" title="View recipe for ${recipe.title}">
+                            <img src="${recipe.image}" class="card-img-top" alt="${recipe.title}" style="height: 200px; object-fit: cover;">
+                        </a>
+                        <div class="card-body d-flex flex-column pb-3">
+                            <h5 class="card-title">${recipe.title}</h5>
+                            <p class="card-text small">${
+                                // Remove tags HTML do sumário e pega a primeira frase.
+                                (recipe.summary || '').replace(/<[^>]*>?/gm, '').split('.')[0] + '.'
+                            }</p>
+                            <p class="card-text mt-auto"><i class="fa-regular fa-clock"></i> ${
+                                recipe.readyInMinutes ? `Ready in ${recipe.readyInMinutes} minutes.` : 'Time not available.'
+                            }</p>
+                            <a href="${recipe.sourceUrl}" class="btn btn-success mt-auto" target="_blank" rel="noopener noreferrer">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            resultsContainer.insertAdjacentHTML('beforeend', cardHtml);
+        });
+    }
 
     // --- "Back to Top" Button Logic ---
     const backToTopBtn = document.getElementById('backToTopBtn');
@@ -221,6 +134,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- Initial Load ---
-    loadAndInitialize();
+    // Oculta o botão "Carregar Mais", pois a busca agora é dinâmica
+    document.getElementById('loadMoreBtn').style.display = 'none';
+
+    // --- Carga Inicial ---
+    showSection('recipes-section'); // Ensure only the recipe section is visible on load
+    fetchRecipes(''); // Chama a busca com uma query vazia para carregar as receitas padrão.
 });

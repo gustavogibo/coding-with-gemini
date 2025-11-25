@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melhores Receitas Salgadas do Brasil</title>
+    <title>Recipe Finder</title>
 
     <!-- SEO and Social Sharing Meta Tags -->
-    <meta name="description" content="Explore uma coleção de deliciosas receitas da culinária brasileira. Encontre pratos como coxinhas, bolinhas de queijo e muito mais em uma interface moderna e interativa.">
-    <meta name="keywords" content="receitas, receitas brasileiras, salgados, comida brasileira, coxinha, bolinha de queijo">
+    <meta name="description" content="Explore a collection of delicious recipes from around the world. Find dishes for any occasion in a modern and interactive interface.">
+    <meta name="keywords" content="recipes, cooking, food, recipe finder, dinner ideas">
 
     <!-- Open Graph (for Facebook, WhatsApp, etc.) -->
-    <meta property="og:title" content="Melhores Receitas Salgadas do Brasil">
-    <meta property="og:description" content="Explore uma coleção de deliciosas receitas da culinária brasileira em uma interface moderna e interativa.">
+    <meta property="og:title" content="Recipe Finder">
+    <meta property="og:description" content="Explore a collection of delicious recipes from around the world in a modern and interactive interface.">
     <meta property="og:image" content="https://github.com/gustavogibo/coding-with-gemini/blob/main/img/website-screenshot.png?raw=true">
     <meta property="og:url" content="https://gustavogibo.github.io/coding-with-gemini/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Melhores Receitas Salgadas do Brasil">
-    <meta name="twitter:description" content="Explore uma coleção de deliciosas receitas da culinária brasileira em uma interface moderna e interativa.">
+    <meta name="twitter:title" content="Recipe Finder">
+    <meta name="twitter:description" content="Explore a collection of delicious recipes from around the world in a modern and interactive interface.">
     <meta name="twitter:image" content="https://github.com/gustavogibo/coding-with-gemini/blob/main/img/website-screenshot.png?raw=true">
 
     <!-- Favicon -->
@@ -47,57 +47,99 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#">Melhores receitas salgadas do <b>Brasil</b></a>
+                <a class="navbar-brand nav-trigger" href="#" data-target="recipes-section">Recipe <b>Finder</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Links uteis</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link active nav-trigger" aria-current="page" href="#" data-target="recipes-section">Home</a></li>
+                        <li class="nav-item"><a class="nav-link nav-trigger" href="#" data-target="about-page-section">About</a></li>
+                        <li class="nav-item"><a class="nav-link nav-trigger" href="#" data-target="links-page-section">Useful Links</a></li>
+                        <li class="nav-item"><a class="nav-link nav-trigger" href="#" data-target="contact-page-section">Contact</a></li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar receita..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        <button class="btn btn-outline-secondary ms-2" type="button" id="resetBtn">Limpar</button>
+                        <input class="form-control me-2" type="search" placeholder="Search for a recipe..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-secondary ms-2" type="button" id="resetBtn">Clear</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
     <main class="container mt-5">
-        <section>
-            <h2 class="mb-5 text-center section-title">Comidas</h2>
+        <section id="recipes-section">
+            <h2 class="mb-5 text-center section-title">Recipes</h2>
             <div id="noResultsMessage" class="alert alert-warning text-center p-4" role="alert" style="display: none;">
                 <img src="https://media.tenor.com/eB2zEVY6CNgAAAAM/broken-egg.gif" alt="Ovo quebrado caindo no chão" width="150" class="mb-3 rounded">
-                <h4 class="alert-heading">Oops! A busca quebrou.</h4>
-                <p>Não encontramos nenhuma receita com esses termos. Que tal tentar de novo?</p>
+                <h4 class="alert-heading">Oops! The search came up empty.</h4>
+                <p>We couldn't find any recipes with those terms. How about trying again?</p>
+            </div>
+            <!-- Spinner de Carregamento -->
+            <div id="loadingSpinner" class="text-center my-5" style="display: none;">
+                <div class="spinner-border text-success" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div>
             <div class="d-flex justify-content-center mt-5">
-                <button class="btn btn-success btn-lg" id="loadMoreBtn">Carregar Mais Receitas</button>
+                <button class="btn btn-success btn-lg" id="loadMoreBtn">Load More Recipes</button>
+            </div>
+        </section>
+
+        <!-- About Section (Hidden by default) -->
+        <section id="about-page-section" class="page-section" style="display: none;">
+            <h2 class="mb-5 text-center section-title">About Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead">Welcome to Recipe Finder! Our mission is to bring the joy of cooking to kitchens everywhere. We believe that anyone can create delicious meals, and our platform is designed to make finding and following recipes as easy and enjoyable as possible.</p>
+                    <p>This project was built to demonstrate modern web technologies, including a Python Flask back-end that communicates with the Spoonacular API to fetch live recipe data, and a dynamic front-end built with HTML, CSS, and vanilla JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Useful Links Section (Hidden by default) -->
+        <section id="links-page-section" class="page-section" style="display: none;">
+            <h2 class="mb-5 text-center section-title">Useful Links</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://spoonacular.com/food-api" target="_blank" rel="noopener noreferrer">Spoonacular API</a> - The food API that powers our recipe search.</li>
+                        <li class="list-group-item"><a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a> - The CSS framework used for our site's layout and components.</li>
+                        <li class="list-group-item"><a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a> - For all the icons you see on the site.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Hidden by default) -->
+        <section id="contact-page-section" class="page-section" style="display: none;">
+            <h2 class="mb-5 text-center section-title">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p>Have questions or feedback? We'd love to hear from you!</p>
+                    <a href="mailto:contact@recipefinder.com" class="btn btn-success btn-lg">Email Us</a>
+                </div>
             </div>
         </section>
     </main>
-    <a href="#" id="backToTopBtn" class="btn btn-success btn-lg" role="button" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
+    <a href="#" id="backToTopBtn" class="btn btn-success btn-lg" role="button" title="Back to top"><i class="fas fa-arrow-up"></i></a>
     <footer class="bg-dark text-white pt-5 pb-4 mt-5">
         <div class="container text-center text-md-start">
             <div class="row text-center text-md-start">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-success">Melhores Receitas</h5>
-                    <p>Aqui você encontra as melhores receitas de comidas salgadas da culinária brasileira. Explore, cozinhe e delicie-se!</p>
+                    <h5 class="text-uppercase mb-4 fw-bold text-success">Recipe Finder</h5>
+                    <p>Here you can find the best recipes from around the world. Explore, cook, and enjoy!</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-links">
                     <h5 class="text-uppercase mb-4 fw-bold text-success">Links</h5>
-                    <p><a href="#" class="text-white text-decoration-none">Home</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Sobre</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Receitas</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Contato</a></p>
+                    <p><a href="#" class="text-white text-decoration-none nav-trigger" data-target="recipes-section">Home</a></p>
+                    <p><a href="#" class="text-white text-decoration-none nav-trigger" data-target="about-page-section">About</a></p>
+                    <p><a href="#" class="text-white text-decoration-none nav-trigger" data-target="recipes-section">Recipes</a></p>
+                    <p><a href="#" class="text-white text-decoration-none nav-trigger" data-target="contact-page-section">Contact</a></p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-success">Siga-nos</h5>
+                    <h5 class="text-uppercase mb-4 fw-bold text-success">Follow us</h5>
                     <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
@@ -106,7 +148,7 @@
             </div>
             <hr class="mb-4">
             <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8"><p class="m-0">&copy; 2024 - Desenvolvido por Alura. Todos os direitos reservados.</p></div>
+                <div class="col-md-7 col-lg-8"><p class="m-0">&copy; 2024 - Developed by Alura. All rights reserved.</p></div>
             </div>
         </div>
     </footer>
